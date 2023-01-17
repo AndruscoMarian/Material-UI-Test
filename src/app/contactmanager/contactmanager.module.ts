@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { MaterialModule } from '../share/material.module';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { ContactmanagerAppComponent } from './contactmanager-app.component';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
@@ -39,6 +39,7 @@ const routes: Routes = [
     MaterialModule,
     HttpClientModule,
     FormsModule,
+    ReactiveFormsModule,
     RouterModule.forChild(routes)
   ],
   providers: [
